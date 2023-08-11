@@ -4,49 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/scripts.js"></script>
     <title>Language Picker</title>
 </head>
 
 <body>
-    <h1>
-        Language Picker
-    </h1>
-    <p>Welcome to the official resource for choosing your next coding language.</p>
-    <p>Answer the following questions to match your creative mind to your future coding language!</p>
+    <div>
+        <h1>Language Picker</h1>
+        <p>Welcome to the official resource for choosing your next coding language.</p>
+        <p>Answer the following questions to match your creative mind to your future coding language!</p>
 
-    <form id="questionnaire">
-        <ol>
-            <li><label for="superpower">If your code were a superhero, which superpower would you want it to have?</label>
-            <select id="superpower" name="questionnaire"></li>
-                <option value="blank"></option>
-                <option value="super-strength">Super strength 💪</option>
-                <option value="web-slinger">Web slinger 🕷️</option>
-                <option value="shape-shift">Shape shifter 💃</option>
-            </select><br><br>
-            <li><label for="fantasy">Imagine your code is a character in a fantasy world. Who would they be?</label>
-            <select id="fantasy" name="questionnaire"></li>
-                <option value="blank"></option>
-                <option value="wizard">Wizard 🧙‍♂️</option>
-                <option value="rogue">Rogue 👁️‍🗨️</option>
-                <option value="alchemist">Alchemist ⚗️</option>
-            </select><br><br>
-            <li><label for="party">If your code could throw a party, what would the theme be?</label>
-            <select id="party" name="questionnaire"></li>
-                <option value="blank"></option>
-                <option value="fancy">Black-tie event 🤵‍♀️</option>
-                <option value="beach">A lively beach bash 🏖️</option>
-                <option value="costume">Costume party 👯🏽‍♀️</option>
-            </select><br><br>
-            <li><label for="animal">If your code were an animal, what would it be?</label>
-            <select id="animal" name="questionnaire"></li>
-                <option value="blank"></option>
-                <option value="lion">Lion 🦁</option>
-                <option value="chameleon">Chameleon 🦎</option>
-                <option value="dolphin">Dolphin 🐬</option>
-            </select><br><br>
-        </ol>
-    </form>
-
+        <form id="questionnaire">
+            <ol>
+                <li><label for="superpower">If your code were a superhero, which superpower would you want it to
+                        have?</label>
+                    <select id="superpower" name="questionnaire">
+                        <option value="blank"></option>
+                        <option value="super-strength">Super strength 💪</option>
+                        <option value="web-slinger">Web slinger 🕷️</option>
+                        <option value="shape-shift">Shape shifter 💃</option>
+                    </select>
+                </li><br>
+                <li><label for="fantasy">Imagine your code is a character in a fantasy world. Who would they be?</label>
+                    <select id="fantasy" name="questionnaire">
+                        <option value="blank"></option>
+                        <option value="wizard">Wizard 🧙‍♂️</option>
+                        <option value="rogue">Rogue 👁️‍🗨️</option>
+                        <option value="alchemist">Alchemist ⚗️</option>
+                    </select>
+                </li><br>
+                <li><label for="party">If your code could throw a party, what would the theme be?</label>
+                    <select id="party" name="questionnaire">
+                        <option value="blank"></option>
+                        <option value="fancy">Black-tie event 🤵‍♀️</option>
+                        <option value="beach">A lively beach bash 🏖️</option>
+                        <option value="costume">Costume party 👯🏽‍♀️</option>
+                    </select>
+                </li><br>
+                <li><label for="animal">If your code were an animal, what would it be?</label>
+                    <select id="animal" name="questionnaire">
+                        <option value="blank"></option>
+                        <option value="lion">Lion 🦁</option>
+                        <option value="chameleon">Chameleon 🦎</option>
+                        <option value="dolphin">Dolphin 🐬</option>
+                    </select>
+                </li><br>
+                <li><label for="movie">If your code were a movie, what genre would it be?</label>
+                    <select id="movie" name="questionnaire">
+                        <option value="blank"></option>
+                        <option value="action">Action 🔥</option>
+                        <option value="mystery">Mystery 🔍</option>
+                        <option value="comedy">Comedy 😂</option>
+                    </select>
+                </li>
+            </ol>
+            <button type="submit">Code me!</button>
+        </form>
+        <div id="c-sharp" class="hidden">
+            <h1>Your next coding language is C#!</h1>
+            <p>Your inner coding desires have hinted that you seek power and the ability to create robust applications. C# will give you all the tools you need to rule your next domain!</p> 
+        </div>
+        <div id="js" class="hidden">
+            <h1>Your next coding language is JavaScript!</h1>
+            <p>Your inner coding desires have hinted that you seek to control all things web. JavaScript will give you all of the tools you need to unravel the mysteries of browsers and servers!</p> 
+        </div>
+        <div id="python" class="hidden">
+            <h1>Your next coding language is Python!</h1>
+            <p>Your inner coding desires have hinted that you are flexible and like to be a master of many traits. Python will give you all of the tools you need to nagivate the vast sea of tasks from web to AI!</p> 
+        </div>
+    </div>
 </body>
 
 </html>
