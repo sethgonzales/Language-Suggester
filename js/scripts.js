@@ -13,6 +13,10 @@ function hideResultsAndError() {
 function findCodeType(event) {
     event.preventDefault();
 
+    //Process user name information
+    document.getElementById("user-name").innerText = document.getElementById("user-name-input").value;
+
+    //Find question response values
     const superpower = document.getElementById("superpower").value;
     const fantasy = document.getElementById("fantasy").value;
     const party = document.getElementById("party").value;

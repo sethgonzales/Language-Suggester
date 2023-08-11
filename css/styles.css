@@ -1,6 +1,5 @@
 body {
-    background-color: black
-    color: black;
+    background-color: rgba(rgba(65, 128, 88, 0.812));
     font-family: sans-serif;
     margin-left: 15%;
     margin-right: 15%;
@@ -9,8 +8,4 @@ body {
 
 .hidden {
     display: none;
-}
-
-.main {
-    color: red;
 }
