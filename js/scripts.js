@@ -3,9 +3,10 @@
 
 // User Interface Logic
 function hideResultsAndError() {
-    document.getElementById("c-sharp").setAttribute("class", "hidden");
-    document.getElementById("js").setAttribute("class", "hidden");
-    document.getElementById("python").setAttribute("class", "hidden");
+    document.getElementById("error-message").setAttribute("class", "hidden");
+    document.getElementById("c-sharpLang").setAttribute("class", "hidden");
+    document.getElementById("jsLang").setAttribute("class", "hidden");
+    document.getElementById("pythonLang").setAttribute("class", "hidden");
 }
 
 function findCodeType(event) {
@@ -17,39 +18,79 @@ function findCodeType(event) {
     const animal = document.getElementById("animal").value;
     const movie = document.getElementById("movie").value;
 
-    // const cSharp = document.getElementById("c-sharp");
-    // const js = document.getElementById("js");
-    // const python = document.getElementById("python");
+    //start  c# option
+    if (superpower === "c-sharp" && fantasy === "c-sharp" && party === "c-sharp") {
+        document.getElementById("c-sharpLang").removeAttribute("class");
+    } else if (superpower === "c-sharp" && fantasy === "c-sharp" && animal === "c-sharp") {
+        document.getElementById("c-sharpLang").removeAttribute("class");
+    } else if (superpower === "c-sharp" && fantasy === "c-sharp" && movie === "c-sharp") {
+        document.getElementById("c-sharpLang").removeAttribute("class");
+    } else if (superpower === "c-sharp" && party === "c-sharp" && animal === "c-sharp") {
+        document.getElementById("c-sharpLang").removeAttribute("class");
+    } else if (superpower === "c-sharp" && party === "c-sharp" && movie === "c-sharp") {
+        document.getElementById("c-sharpLang").removeAttribute("class");
+    } else if (superpower === "c-sharp" && animal === "c-sharp" && movie === "c-sharp") {
+        document.getElementById("c-sharpLang").removeAttribute("class");
+    } else if (fantasy === "c-sharp" && party === "c-sharp" && animal === "c-sharp") {
+        document.getElementById("c-sharpLang").removeAttribute("class");
+    } else if (fantasy === "c-sharp" && party === "c-sharp" && movie === "c-sharp") {
+        document.getElementById("c-sharpLang").removeAttribute("class");
+    } else if (fantasy === "c-sharp" && animal === "c-sharp" && movie === "c-sharp") {
+        document.getElementById("c-sharpLang").removeAttribute("class");
+    } else if (party === "c-sharp" && animal === "c-sharp" && movie === "c-sharp") {
+        document.getElementById("c-sharpLang").removeAttribute("class");
 
+        //start  js option
+    } else if (superpower === "js" && fantasy === "js" && party === "js") {
+        document.getElementById("jsLang").removeAttribute("class");
+    } else if (superpower === "js" && fantasy === "js" && animal === "js") {
+        document.getElementById("jsLang").removeAttribute("class");
+    } else if (superpower === "js" && fantasy === "js" && movie === "js") {
+        document.getElementById("jsLang").removeAttribute("class");
+    } else if (superpower === "js" && party === "js" && animal === "js") {
+        document.getElementById("jsLang").removeAttribute("class");
+    } else if (superpower === "js" && party === "js" && movie === "js") {
+        document.getElementById("jsLang").removeAttribute("class");
+    } else if (superpower === "js" && animal === "js" && movie === "js") {
+        document.getElementById("jsLang").removeAttribute("class");
+    } else if (fantasy === "js" && party === "js" && animal === "js") {
+        document.getElementById("jsLang").removeAttribute("class");
+    } else if (fantasy === "js" && party === "js" && movie === "js") {
+        document.getElementById("jsLang").removeAttribute("class");
+    } else if (fantasy === "js" && animal === "js" && movie === "js") {
+        document.getElementById("jsLang").removeAttribute("class");
+    } else if (party === "js" && animal === "js" && movie === "js") {
+        document.getElementById("jsLang").removeAttribute("class");
 
-
-    if (superpower === "blank" || fantasy === "blank" || party === "blank" || animal === "blank" || movie === "blank") {
-        document.getElementById("error-message").removeAttribute("class");
+        //start  python option
+    } else if (superpower === "python" && fantasy === "python" && party === "python") {
+        document.getElementById("pythonLang").removeAttribute("class");
+    } else if (superpower === "python" && fantasy === "python" && animal === "python") {
+        document.getElementById("pythonLang").removeAttribute("class");
+    } else if (superpower === "python" && fantasy === "python" && movie === "python") {
+        document.getElementById("pythonLang").removeAttribute("class");
+    } else if (superpower === "python" && party === "python" && animal === "python") {
+        document.getElementById("pythonLang").removeAttribute("class");
+    } else if (superpower === "python" && party === "python" && movie === "python") {
+        document.getElementById("pythonLang").removeAttribute("class");
+    } else if (superpower === "python" && animal === "python" && movie === "python") {
+        document.getElementById("pythonLang").removeAttribute("class");
+    } else if (fantasy === "python" && party === "python" && animal === "python") {
+        document.getElementById("pythonLang").removeAttribute("class");
+    } else if (fantasy === "python" && party === "python" && movie === "python") {
+        document.getElementById("pythonLang").removeAttribute("class");
+    } else if (fantasy === "python" && animal === "python" && movie === "python") {
+        document.getElementById("pythonLang").removeAttribute("class");
+    } else if (party === "python" && animal === "python" && movie === "python") {
+        document.getElementById("pythonLang").removeAttribute("class");
     } else {
-        // //start c-sharp option
-        // if (superpower === "c-sharp" && fantasy === "c-sharp" && party === "c-sharp" && animal === "c-sharp" && movie === "c-sharp") {
-        //     document.getElementById("c-sharpLang").removeAttribute("class");
-        // } else if (superpower === "c-sharp" && fantasy === "c-sharp" && party === "c-sharp" && animal === "c-sharp" || movie === "c-sharp") {
-        //     document.getElementById("c-sharpLang").removeAttribute("class");
-        // } else if (superpower === "c-sharp" && fantasy === "c-sharp" && party === "c-sharp" && animal || "c-sharp" && movie === "c-sharp") {
-        //     document.getElementById("c-sharpLang").removeAttribute("class");
-        // } else if (superpower === "c-sharp" && fantasy === "c-sharp" && party === "c-sharp" || animal === "c-sharp" && movie === "c-sharp") {
-        //     document.getElementById("c-sharpLang").removeAttribute("class");
-        // } else if (superpower === "c-sharp" && fantasy === "c-sharp" || party === "c-sharp" && animal === "c-sharp" && movie === "c-sharp") {
-        //     document.getElementById("c-sharpLang").removeAttribute("class");
-        // } else if (superpower === "c-sharp" || fantasy === "c-sharp" && party === "c-sharp" && animal === "c-sharp" && movie === "c-sharp") {
-        //     document.getElementById("c-sharpLang").removeAttribute("class");
-
-        //start alt c# option
-    } if (superpower === "c-sharp" && fantasy === "c-sharp" && party === "c-sharp" && animal === "c-sharp" && movie === "c-sharp") {
-        document.getElementById("c-sharpLang").removeAttribute("class");
-    } else if (if (superpower === "c-sharp" && fantasy === "c-sharp" && party === "c-sharp" && animal === "c-sharp" && movie === "c-sharp") {
-        document.getElementById("c-sharpLang").removeAttribute("class");
-
-
+        document.getElementById("error-message").removeAttribute("class");
     }
 }
+
 window.addEventListener("load", function () {
     const form = document.getElementById("questionnaire");
+    form.addEventListener("submit", hideResultsAndError);
     form.addEventListener("submit", findCodeType);
+   
 });
