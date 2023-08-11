@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Language Picker</title>
 </head>
+
 <body>
     <h1>
         Language Picker
     </h1>
     <p>Welcome to the official resource for choosing your next coding language.</p>
-    <p>Simply answer the questions below to get started!</p>
-    
+    <p>Answer the following questions to match your creative mind to your future coding language!</p>
+
+    <form id="questionnaire">
+        <ol>
+            <li><label for="superpower">If your code were a superhero, which superpower would you want it to have?</label>
+            <select id="superpower" name="questionnaire"></li>
+                <option value="blank"></option>
+                <option value="super-strength">Super strength 💪</option>
+                <option value="web-slinger">Web slinger 🕷️</option>
+                <option value="shape-shift">Shape shifter 💃</option>
+            </select><br><br>
+            <li><label for="fantasy">Imagine your code is a character in a fantasy world. Who would they be?</label>
+            <select id="fantasy" name="questionnaire"></li>
+                <option value="blank"></option>
+                <option value="wizard">Wizard 🧙‍♂️</option>
+                <option value="rogue">Rogue 👁️‍🗨️</option>
+                <option value="alchemist">Alchemist ⚗️</option>
+            </select><br><br>
+            <li><label for="party">If your code could throw a party, what would the theme be?</label>
+            <select id="party" name="questionnaire"></li>
+                <option value="blank"></option>
+                <option value="fancy">Black-tie event 🤵‍♀️</option>
+                <option value="beach">A lively beach bash 🏖️</option>
+                <option value="costume">Costume party 👯🏽‍♀️</option>
+            </select><br><br>
+            <li><label for="animal">If your code were an animal, what would it be?</label>
+            <select id="animal" name="questionnaire"></li>
+                <option value="blank"></option>
+                <option value="lion">Lion 🦁</option>
+                <option value="chameleon">Chameleon 🦎</option>
+                <option value="dolphin">Dolphin 🐬</option>
+            </select><br><br>
+        </ol>
+    </form>
+
 </body>
+
 </html>
