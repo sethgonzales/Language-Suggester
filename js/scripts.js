@@ -14,21 +14,41 @@ function findCodeType(event) {
     const superpower = document.getElementById("superpower").value;
     const fantasy = document.getElementById("fantasy").value;
     const party = document.getElementById("party").value;
-    const animal = document.getElementById("animal").value; 
+    const animal = document.getElementById("animal").value;
     const movie = document.getElementById("movie").value;
 
-    // const cSharp = document.getElementById("c-sharp").value;
-    // const js = document.getElementById("js").value;
-    // const python = document.getElementById("python").value;
+    // const cSharp = document.getElementById("c-sharp");
+    // const js = document.getElementById("js");
+    // const python = document.getElementById("python");
 
 
 
-if (superpower === "blank" || fantasy === "blank" || party === "blank" || animal === "blank" || movie === "blank") {
-    document.getElementById("error-message").removeAttribute("class");
+    if (superpower === "blank" || fantasy === "blank" || party === "blank" || animal === "blank" || movie === "blank") {
+        document.getElementById("error-message").removeAttribute("class");
+    } else {
+        // //start c-sharp option
+        // if (superpower === "c-sharp" && fantasy === "c-sharp" && party === "c-sharp" && animal === "c-sharp" && movie === "c-sharp") {
+        //     document.getElementById("c-sharpLang").removeAttribute("class");
+        // } else if (superpower === "c-sharp" && fantasy === "c-sharp" && party === "c-sharp" && animal === "c-sharp" || movie === "c-sharp") {
+        //     document.getElementById("c-sharpLang").removeAttribute("class");
+        // } else if (superpower === "c-sharp" && fantasy === "c-sharp" && party === "c-sharp" && animal || "c-sharp" && movie === "c-sharp") {
+        //     document.getElementById("c-sharpLang").removeAttribute("class");
+        // } else if (superpower === "c-sharp" && fantasy === "c-sharp" && party === "c-sharp" || animal === "c-sharp" && movie === "c-sharp") {
+        //     document.getElementById("c-sharpLang").removeAttribute("class");
+        // } else if (superpower === "c-sharp" && fantasy === "c-sharp" || party === "c-sharp" && animal === "c-sharp" && movie === "c-sharp") {
+        //     document.getElementById("c-sharpLang").removeAttribute("class");
+        // } else if (superpower === "c-sharp" || fantasy === "c-sharp" && party === "c-sharp" && animal === "c-sharp" && movie === "c-sharp") {
+        //     document.getElementById("c-sharpLang").removeAttribute("class");
+
+        //start alt c# option
+    } if (superpower === "c-sharp" && fantasy === "c-sharp" && party === "c-sharp" && animal === "c-sharp" && movie === "c-sharp") {
+        document.getElementById("c-sharpLang").removeAttribute("class");
+    } else if (if (superpower === "c-sharp" && fantasy === "c-sharp" && party === "c-sharp" && animal === "c-sharp" && movie === "c-sharp") {
+        document.getElementById("c-sharpLang").removeAttribute("class");
+
+
+    }
 }
-}
-
-
 window.addEventListener("load", function () {
     const form = document.getElementById("questionnaire");
     form.addEventListener("submit", findCodeType);
