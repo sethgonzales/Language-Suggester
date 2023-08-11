@@ -1,9 +1,31 @@
 body {
     background-color: rgba(rgba(65, 128, 88, 0.812));
-    margin-left: 15%;
-    margin-right: 15%;
 }
 
+button {
+    color: blue;
+    font-weight:bold ;
+    margin-left: 50%;
+}
+
+.left-column {
+    float: left;
+    width: 50%;
+} 
+.right-column {
+    float: left;
+    width: 50%;
+} 
+
+.header { 
+    text-align: center;
+    margin: 3%
+}
+
+.header p{ 
+    font-style: italic;
+    font-size: 100%;
+}
 
 .hidden {
     display: none;

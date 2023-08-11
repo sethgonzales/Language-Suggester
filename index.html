@@ -12,80 +12,88 @@
 
 <body>
     <div class="container">
-        <h1>Language Picker</h1>
-        <p>Welcome to the official resource for choosing your next coding language.</p>
-
-        <form id="username-form">
-            <label for="username-input">Before we start, what is your name? </label>
-            <input id="username-input" name="questionnaire" type="text">
-        </form>
-        <p>Answer the following questions to match your creative mind to your future coding language!</p>
-
-        <form id="questionnaire">
-            <ol>
-                <li><label for="superpower">If your code were a superhero, which superpower would you want it to
-                        have?</label>
-                    <select id="superpower" name="questionnaire" class="form-select" aria-label="Default select example">
-                        <option value="blank"></option>
-                        <option value="c-sharp">Super strength 💪</option>
-                        <option value="js">Web slinger 🕷️</option>
-                        <option value="python">Shape shifter 💃</option>
-                    </select>
-                </li><br>
-                <li><label for="fantasy">Imagine your code is a character in a fantasy world. Who would they be?</label>
-                    <select id="fantasy" name="questionnaire" class="form-select" aria-label="Default select example">
-                        <option value="blank"></option>
-                        <option value="c-sharp">Wizard 🧙‍♂️</option>
-                        <option value="js">Rogue 👁️‍🗨️</option>
-                        <option value="python">Alchemist ⚗️</option>
-                    </select>
-                </li><br>
-                <li><label for="party">If your code could throw a party, what would the theme be?</label>
-                    <select id="party" name="questionnaire" class="form-select" aria-label="Default select example">
-                        <option value="blank"></option>
-                        <option value="c-sharp">Black-tie event 🤵‍♀️</option>
-                        <option value="js">A lively beach bash 🏖️</option>
-                        <option value="python">Costume party 👯🏽‍♀️</option>
-                    </select>
-                </li><br>
-                <li><label for="animal">If your code were an animal, what would it be?</label>
-                    <select id="animal" name="questionnaire" class="form-select" aria-label="Default select example">
-                        <option value="blank"></option>
-                        <option value="c-sharp">Lion 🦁</option>
-                        <option value="js">Chameleon 🦎</option>
-                        <option value="python">Dolphin 🐬</option>
-                    </select>
-                </li><br>
-                <li><label for="movie">If your code were a movie, what genre would it be?</label>
-                    <select id="movie" name="questionnaire" class="form-select" aria-label="Default select example">
-                        <option value="blank"></option>
-                        <option value="c-sharp">Action 🔥</option>
-                        <option value="js">Mystery 🔍</option>
-                        <option value="python">Comedy 😂</option>
-                    </select>
-                </li>
-            </ol>
-            <button type="submit">Code me!</button>
-        </form>
-        <div id="error-message" class="hidden">
-            <h1>Your next coding language is unknown</h1>
-            <p>Your results are <em>inconclusive</em>!</p>
+        <div class="left-column">
+            <div class="header">
+                <h1>Language Picker</h1>
+                <p>Welcome to the official resource for choosing your next coding language.</p>
+            </div>
+            <form id="questionnaire">
+                <label for="username-input"><strong>Before we start, what is your name?</strong></label>
+                <input id="username-input" name="questionnaire" type="text" required><br><br>
+                <p>Answer the following questions to match your creative mind to your future coding language!</p>
+                <ol>
+                    <li><label for="superpower">If your code were a superhero, which superpower would you want it to
+                            have?</label>
+                        <select id="superpower" name="superpower" class="form-select">
+                            <option value="blank"></option>
+                            <option value="c-sharp">Super strength 💪</option>
+                            <option value="js">Web slinger 🕷️</option>
+                            <option value="python">Shape shifter 💃</option>
+                        </select>
+                    </li><br>
+                    <li><label for="fantasy">Imagine your code is a character in a fantasy world. Who would they
+                            be?</label>
+                        <select id="fantasy" name="fantasy" class="form-select">
+                            <option value="blank"></option>
+                            <option value="c-sharp">Wizard 🧙‍♂️</option>
+                            <option value="js">Rogue 👁️‍🗨️</option>
+                            <option value="python">Alchemist ⚗️</option>
+                        </select>
+                    </li><br>
+                    <li><label for="party">If your code could throw a party, what would the theme be?</label>
+                        <select id="party" name="party" class="form-select">
+                            <option value="blank"></option>
+                            <option value="c-sharp">Black-tie event 🤵‍♀️</option>
+                            <option value="js">A lively beach bash 🏖️</option>
+                            <option value="python">Costume party 👯🏽‍♀️</option>
+                        </select>
+                    </li><br>
+                    <li><label for="animal">If your code were an animal, what would it be?</label>
+                        <select id="animal" name="animal" class="form-select">
+                            <option value="blank"></option>
+                            <option value="c-sharp">Lion 🦁</option>
+                            <option value="js">Chameleon 🦎</option>
+                            <option value="python">Dolphin 🐬</option>
+                        </select>
+                    </li><br>
+                    <li><label for="movie">If your code were a movie, what genre would it be?</label>
+                        <select id="movie" name="movie" class="form-select">
+                            <option value="blank"></option>
+                            <option value="c-sharp">Action 🔥</option>
+                            <option value="js">Mystery 🔍</option>
+                            <option value="python">Comedy 😂</option>
+                        </select>
+                    </li>
+                </ol>
+                <button type="submit">Code me!</button><br><br>
+            </form>
         </div>
-        <div id="c-sharpLang" class="hidden">
-            <h1>Your next coding language is C#!</h1>
-            <p><span id="username1"></span>! Your inner coding desires have hinted that you seek power and the ability to create robust applications.
-                C# will give you all the tools you need to rule your next domain!</p>
-        </div>
-        <div id="jsLang" class="hidden">
-            <h1>Your next coding language is JavaScript!</h1>
-            <p><span id="username2"></span>! Your inner coding desires have hinted that you seek to control all things web. JavaScript will give you
-                all of the tools you need to unravel the mysteries of browsers and servers!</p>
-        </div>
-        <div id="pythonLang" class="hidden">
-            <h1>Your next coding language is Python!</h1>
-            <p><span id="username3"></span>! Your inner coding desires have hinted that you are flexible and like to be
-                a master of many traits. Python will give you all of the tools you need to nagivate the vast sea of
-                tasks from web to AI!</p>
+        <div class="right-column">
+            <h1 id="waiting-message">Your next coding language is...</h1>
+            <div id="error-message" class="hidden">
+                <h1>Your next coding language is unknown</h1>
+                <p>Your results are <em>inconclusive</em>!</p>
+            </div>
+            <div id="c-sharpLang" class="hidden">
+                <h1>Your next coding language is C#!</h1>
+                <p><span id="username1"></span>Your inner coding desires have hinted that you seek power and the ability
+                    to
+                    create robust applications.
+                    C# will give you all the tools you need to rule your next domain!</p>
+            </div>
+            <div id="jsLang" class="hidden">
+                <h1>Your next coding language is JavaScript!</h1>
+                <p><span id="username2"></span>Your inner coding desires have hinted that you seek to control all things
+                    web. JavaScript will give you
+                    all of the tools you need to unravel the mysteries of browsers and servers!</p>
+            </div>
+            <div id="pythonLang" class="hidden">
+                <h1>Your next coding language is Python!</h1>
+                <p><span id="username3"></span>Your inner coding desires have hinted that you are flexible and like to
+                    be
+                    a master of many traits. Python will give you all of the tools you need to nagivate the vast sea of
+                    tasks from web to AI!</p>
+            </div>
         </div>
     </div>
 </body>
