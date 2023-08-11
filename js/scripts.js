@@ -2,6 +2,7 @@
 
 
 // User Interface Logic
+
 function hideResultsAndError() {
     document.getElementById("error-message").setAttribute("class", "hidden");
     document.getElementById("c-sharpLang").setAttribute("class", "hidden");
@@ -18,7 +19,8 @@ function findCodeType(event) {
     const animal = document.getElementById("animal").value;
     const movie = document.getElementById("movie").value;
 
-    //start  c# option
+    //Must have a set of THREE in order to show preference to a language 
+    //c# combinations
     if (superpower === "c-sharp" && fantasy === "c-sharp" && party === "c-sharp") {
         document.getElementById("c-sharpLang").removeAttribute("class");
     } else if (superpower === "c-sharp" && fantasy === "c-sharp" && animal === "c-sharp") {
@@ -40,7 +42,7 @@ function findCodeType(event) {
     } else if (party === "c-sharp" && animal === "c-sharp" && movie === "c-sharp") {
         document.getElementById("c-sharpLang").removeAttribute("class");
 
-        //start  js option
+        //js combinations
     } else if (superpower === "js" && fantasy === "js" && party === "js") {
         document.getElementById("jsLang").removeAttribute("class");
     } else if (superpower === "js" && fantasy === "js" && animal === "js") {
@@ -62,7 +64,7 @@ function findCodeType(event) {
     } else if (party === "js" && animal === "js" && movie === "js") {
         document.getElementById("jsLang").removeAttribute("class");
 
-        //start  python option
+        //python combinations
     } else if (superpower === "python" && fantasy === "python" && party === "python") {
         document.getElementById("pythonLang").removeAttribute("class");
     } else if (superpower === "python" && fantasy === "python" && animal === "python") {
@@ -83,6 +85,8 @@ function findCodeType(event) {
         document.getElementById("pythonLang").removeAttribute("class");
     } else if (party === "python" && animal === "python" && movie === "python") {
         document.getElementById("pythonLang").removeAttribute("class");
+
+        //Any sets of two, random combinations, or too many blanks lead to error
     } else {
         document.getElementById("error-message").removeAttribute("class");
     }
@@ -92,5 +96,4 @@ window.addEventListener("load", function () {
     const form = document.getElementById("questionnaire");
     form.addEventListener("submit", hideResultsAndError);
     form.addEventListener("submit", findCodeType);
-   
 });
