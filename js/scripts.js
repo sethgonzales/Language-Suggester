@@ -14,7 +14,11 @@ function findCodeType(event) {
     event.preventDefault();
 
     //Process user name information
-    document.getElementById("user-name").innerText = document.getElementById("user-name-input").value;
+    let userName = document.getElementById("username-input").value;
+    document.getElementById("username1").innerText = userName.toString().toUpperCase();
+    document.getElementById("username2").innerText = userName.toString().toUpperCase();
+    document.getElementById("username3").innerText = userName.toString().toUpperCase();
+
 
     //Find question response values
     const superpower = document.getElementById("superpower").value;
