@@ -13,6 +13,8 @@ function hideResultsAndError() {
 function findCodeType(event) {
     event.preventDefault();
 
+    document.getElementById("waiting-message").setAttribute("class", "hidden");
+
     //Process user name information
     let userName = document.getElementById("username-input").value;
     document.getElementById("username1").innerText = userName.toString().toUpperCase() + "! ";
@@ -27,7 +29,7 @@ function findCodeType(event) {
     const animal = document.getElementById("animal").value;
     const movie = document.getElementById("movie").value;
 
-    //Must have a set of THREE in order to show preference to a language 
+    //Must have a set of THREE in order to show preference to a language
     //c# combinations
     if (superpower === "c-sharp" && fantasy === "c-sharp" && party === "c-sharp") {
         document.getElementById("c-sharpLang").removeAttribute("class");

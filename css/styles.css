@@ -1,32 +1,61 @@
+/* Whole page */
 body {
-    background-color: rgba(rgba(65, 128, 88, 0.812));
+    background-color:rgba(127, 161, 139, 0.137);
+    margin: 2%;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Left side of page */
+.left-column {
+    float: left;
+    width: 50%;
+    margin: 3% 0;
+    box-sizing: border-box;
+} 
+
+#left-headers { 
+    text-align: center;
+}
+
+#left-headers p{ 
+    font-style: italic;
+    font-size: 100%;
+}
+
+#questionnaire li{
+    margin-left: -4%;
+    font-size: 90%;
 }
 
 button {
     color: blue;
     font-weight:bold ;
-    margin-left: 50%;
+    margin-left: 40%;
+    cursor: pointer;
 }
 
-.left-column {
-    float: left;
-    width: 50%;
-} 
+/* Right side of page */
 .right-column {
     float: left;
-    width: 50%;
+    width: 40%;
+    margin: 15% 0 15% 6%;
+    box-sizing: border-box;
+    text-align: left;
 } 
 
-.header { 
+.right-column h1 {
     text-align: center;
-    margin: 3%
+    font-size: 150%;
+    margin-left: 0%;
 }
 
-.header p{ 
-    font-style: italic;
-    font-size: 100%;
-}
-
-.hidden {
-    display: none;
+.response-gifs {
+    width: 70%;
+    text-align: center;
+    box-sizing: border-box;
+    margin-right: 0;
+    margin-left: 10%;
 }
