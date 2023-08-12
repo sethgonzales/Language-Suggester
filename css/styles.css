@@ -1,6 +1,6 @@
 /* Whole page */
 body {
-    background-color:rgba(127, 161, 139, 0.137);
+    background-color: rgba(127, 161, 139, 0.137);
     margin: 2%;
 }
 
@@ -14,25 +14,25 @@ body {
     width: 50%;
     margin: 3% 0;
     box-sizing: border-box;
-} 
+}
 
-#left-headers { 
+#left-headers {
     text-align: center;
 }
 
-#left-headers p{ 
+#left-headers p {
     font-style: italic;
     font-size: 100%;
 }
 
-#questionnaire li{
+#questionnaire li {
     margin-left: -4%;
     font-size: 90%;
 }
 
 button {
     color: blue;
-    font-weight:bold ;
+    font-weight: bold;
     margin-left: 40%;
     cursor: pointer;
 }
@@ -44,7 +44,7 @@ button {
     margin: 15% 0 15% 6%;
     box-sizing: border-box;
     text-align: left;
-} 
+}
 
 .right-column h1 {
     text-align: center;
