@@ -25,7 +25,6 @@ This website is designed to help you pick your next coding language based on a q
 ## Known Bugs
 
 * Viewing not optimized for mobile devices or smaller screens.
-* Python snake gif not scaling with window.
 * Logic could be simplified using different methodology. 
 * Logic does not incorporate ALL possible majorities. 
 

@@ -30,6 +30,10 @@ body {
     font-size: 90%;
 }
 
+.form-select {
+    cursor: pointer;
+}
+
 button {
     color: blue;
     font-weight: bold;

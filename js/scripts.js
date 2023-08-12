@@ -52,7 +52,7 @@ function findCodeType(event) {
     } else if (party === "c-sharp" && animal === "c-sharp" && movie === "c-sharp") {
         document.getElementById("c-sharpLang").removeAttribute("class");
 
-        //js combinations
+        //javascript combinations
     } else if (superpower === "js" && fantasy === "js" && party === "js") {
         document.getElementById("jsLang").removeAttribute("class");
     } else if (superpower === "js" && fantasy === "js" && animal === "js") {
